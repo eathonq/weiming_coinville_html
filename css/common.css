@@ -1,0 +1,235 @@
+/*
+* 公共样式表
+*/
+
+/* 根分区 */
+.div-root {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    min-width: 720px;
+    /* min-height: 960px; */
+}
+
+/* 顶部菜单 */
+.div-top-menu {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+.div-top-menu .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.div-top-menu .navbar .navbar-brand {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.img-top-icon {
+    width: 200px;
+}
+
+.div-top-menu .nav-item {
+    margin-left: 20px;
+}
+
+.div-top-menu .nav-item:hover {
+    background-color: #745539;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.div-top-menu .nav-link {
+    font-weight: 700;
+    color: #4D331B;
+    /* 防止文本单词之间断行 */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.div-top-menu .nav-link:hover {
+    color: #E7DDBD;
+}
+
+.div-top-menu .nav-link:focus {
+    color: gray;
+}
+
+/* 底部信息 */
+.div-bottom-info {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    background-color: #C99C53;
+    position: relative;
+    height: 100px;
+}
+
+.div-bottom-info .navbar {
+    padding-top: 20px;
+}
+
+.div-bottom-info .navbar-brand>img {
+    width: 220px;
+}
+
+.div-bottom-info .nav-link {
+    font-weight: 700;
+    color: #4D331B;
+    /* 防止文本单词之间断行 */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.div-bottom-info-center-line {
+    position: relative;
+    top: 10px;
+    height: 28px;
+    /* 或者设置一个固定高度 */
+}
+
+.div-bottom-info-center-line>img {
+    max-height: 100%;
+}
+
+.div-bottom-info-googleplay {
+    width: 150px;
+    display: none;
+}
+
+.div-bottom-info-googleplay>img {
+    width: 100%;
+}
+
+.div-bottom-info-appstore {
+    width: 150px;
+    display: none;
+}
+
+.div-bottom-info-appstore>img {
+    width: 100%;
+}
+
+.div-bottom-info-facebook {
+    width: 50px;
+    display: none;
+}
+
+.div-bottom-info-facebook>img {
+    width: 100%;
+}
+
+/* 自定义 CSS 媒体查询, 根据窗体变化调整大小 */
+@media (max-width: 991.98px) {
+    .responsive-text {
+        font-size: 16px;
+    }
+
+    .responsive-nav-link {
+        font-size: 20px;
+    }
+
+    .img-top-icon {
+        width: 200px;
+    }
+
+    .div-bottom-info-googleplay {
+        display: none;
+    }
+
+    .div-bottom-info-appstore {
+        display: none;
+    }
+
+    .div-bottom-info-facebook {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .responsive-text {
+        font-size: 18px;
+    }
+
+    .responsive-nav-link {
+        font-size: 22px;
+    }
+
+    .img-top-icon {
+        width: 250px;
+    }
+
+    .div-bottom-info-googleplay {
+        display: block;
+    }
+
+    .div-bottom-info-appstore {
+        display: block;
+    }
+
+    .div-bottom-info-facebook {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .responsive-text {
+        font-size: 20px;
+    }
+
+    .responsive-nav-link {
+        font-size: 24px;
+    }
+
+    .img-top-icon {
+        width: 260px;
+    }
+
+    .div-bottom-info-googleplay {
+        display: block;
+    }
+
+    .div-bottom-info-appstore {
+        display: block;
+    }
+
+    .div-bottom-info-facebook {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px) {
+    .responsive-text {
+        font-size: 22px;
+    }
+
+    .responsive-nav-link {
+        font-size: 26px;
+    }
+
+    .img-top-icon {
+        width: 280px;
+    }
+
+    .div-bottom-info-googleplay {
+        display: block;
+    }
+
+    .div-bottom-info-appstore {
+        display: block;
+    }
+
+    .div-bottom-info-facebook {
+        display: block;
+    }
+}

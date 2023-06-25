@@ -1,0 +1,123 @@
+/*
+* index 布局样式
+* User: EATHON
+* Create: 2023-06-21
+* Update: 2023-06-21
+*/
+
+.div-top-background-index {
+    background-image: url("../image/games/u65_state0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* 使用 height: 0 属性将 <div> 元素的高度设置为零，以便根据下面的 padding-bottom 属性自适应调整 */
+    height: 0;
+    /* 图片宽/图片高 */
+    padding-bottom: 67.9166666%;
+    position: relative;
+}
+
+.div-center-background-index {
+    background-color: #E7DDBD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+.div-top-txt-0 {
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #C17328;
+}
+
+.div-top-txt-1 {
+    position: absolute;
+    left: 40px;
+    top: 245px;
+    width: 350px;
+    font-size: 16px;
+    font-weight: 560;
+    font-style: normal;
+    color: #6C4F33;
+}
+
+.div-center-txt-0 {
+    background-image: url("../image/games/explain_u74.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 236px;
+    top: 10px;
+    width: 240px;
+    height: 61px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 560;
+    line-height: 20px;
+    color: #7A5C36;
+}
+.div-center-txt-0>p{
+    position: relative;
+    top: 10px;
+}
+
+.div-center-carousel {
+    position: absolute;
+    left: 97px;
+    top: 88px;
+    width: 526px;
+}
+
+.carousel-control-prev {
+    left: -100;
+}
+.carousel-control-prev>img {
+    width: 50%;
+    position: relative;
+    left: -80px;
+    top: -10px;
+}
+.carousel-control-next>img {
+    width: 50%;
+    position: relative;
+    left: 80px;
+    top: -10px;
+}
+
+.carousel-indicators{
+    top: 260px;
+}
+
+.carousel-item{
+    height: 320px;
+}
+
+.carousel-caption>p{
+    color: #58311D;
+    position: relative;
+    top: 60px;
+}
+
+/* 
+ * container-md
+ * https://v5.bootcss.com/docs/layout/containers/
+ */
+
+/* width:720px */
+@media (max-width: 991.98px) {}
+
+/* width:960px */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* width:1140px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* width:1320px */
+@media (min-width: 1400px) {}

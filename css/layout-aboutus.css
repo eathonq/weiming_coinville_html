@@ -1,0 +1,98 @@
+/*
+* index 布局样式
+* User: EATHON
+* Create: 2023-06-21
+* Update: 2023-06-21
+*/
+
+.div-top-background-index {
+    background-color: #E7DDBD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* 使用 height: 0 属性将 <div> 元素的高度设置为零，以便根据下面的 padding-bottom 属性自适应调整 */
+    height: 0;
+    /* 图片宽/图片高 */
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.div-top-txt-0 {
+    position: absolute;
+    left: 75px;
+    top: 186px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #CC6A45;
+}
+
+.div-top-txt-1 {
+    position: absolute;
+    left: 20px;
+    top: 240px;
+    width: 340px;
+    font-size: 16px;
+    font-weight: 560;
+    font-style: normal;
+    color: #70675E;
+}
+
+.div-top-txt-2 {
+    position: absolute;
+    left: 50px;
+    top: 355px;
+    font-size: 16px;
+    font-weight: 560;
+    font-style: normal;
+    color: #70675E;
+}
+
+.div-top-img-0 {
+    position: absolute;
+    left: 20px;
+    top: 180px;
+    width: 46px;
+}
+
+.div-top-img-0>img {
+    width: 100%;
+}
+
+.div-top-img-1 {
+    position: absolute;
+    left: 20px;
+    top: 357px;
+    width: 21px;
+}
+
+.div-top-img-1>img {
+    width: 100%;
+}
+
+.div-top-img-2 {
+    position: absolute;
+    left: 370px;
+    top: 164px;
+    width: 318px;
+}
+
+.div-top-img-2>img {
+    width: 100%;
+}
+
+/* 
+ * container-md
+ * https://v5.bootcss.com/docs/layout/containers/
+ */
+
+/* width:720px */
+@media (max-width: 991.98px) {}
+
+/* width:960px */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* width:1140px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* width:1320px */
+@media (min-width: 1400px) {}
