@@ -19,9 +19,9 @@
 
 .div-top-content{
     position: absolute;
-    left: 35px;
+    left: 5%;
     top: 120px;
-    width: 650px;
+    width: 90%;
 }
 
 .div-top-txt-0 {
@@ -29,7 +29,6 @@
     font-weight: 600;
     color: #CC6A45;
     position: relative;
-    top: 8px;
 }
 
 .div-top-txt-1 {
@@ -39,7 +38,6 @@
     color: #CC6A45;
     text-align: right;
     position: relative;
-    top: 8px;
 }
 
 .div-top-txt-2 {
@@ -47,9 +45,9 @@
     color: #CC6A45;
 }
 
-.div-top-txt-2>textarea{
+/* .div-top-txt-2>textarea{
     height: 122px;
-}
+} */
 
 .div-top-input-0{
     font-size: 13px;

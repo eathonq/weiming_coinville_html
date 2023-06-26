@@ -39,38 +39,42 @@
             </nav>
         </div>
         <div id="top" class="div-top-background-index">
-            <div class="div-top-content">
-                <div class="row">
-                    <div class="col div-top-txt-0">
-                        <p>Comments and thoughts:</p>
+            <div class="div-top-content ">
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-6 div-top-txt-0">
+                            <label for="textarea-0">Comments and thoughts:</label>
+                        </div>
+                        <div class="col-6 div-top-txt-1">
+                            <label for="textarea-0" id="p-limit-length">0 / 300</label>
+                        </div>
                     </div>
-                    <div class="col div-top-txt-1">
-                        <p id="p-limit-length">0 / 300</p>
+                    <div class="div-top-txt-2">
+                        <textarea id="textarea-0" class="form-control" rows="3"
+                            placeholder="Only 10 submissions per day,limit 300 words"></textarea>
+                        <script>
+                            var textarea = document.getElementById("textarea-0");
+                            textarea.oninput = function () {
+                                var maxlength = 300;
+                                var currentLength = this.value.length;
+                                if (currentLength >= maxlength) {
+                                    this.value = this.value.substring(0, maxlength);
+                                    document.getElementById("p-limit-length").innerHTML = maxlength + " / " + maxlength;
+                                }
+                                else {
+                                    document.getElementById("p-limit-length").innerHTML = currentLength + " / " + maxlength;
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
-                <div class="div-top-txt-2">
-                    <textarea id="textarea-0" class="form-control"
-                        placeholder="Only 10 submissions per day,limit 300 words"></textarea>
-                    <script>
-                        var textarea = document.getElementById("textarea-0");
-                        textarea.oninput = function () {
-                            var maxlength = 300;
-                            var currentLength = this.value.length;
-                            if (currentLength >= maxlength) {
-                                this.value = this.value.substring(0, maxlength);
-                                document.getElementById("p-limit-length").innerHTML = maxlength + " / " + maxlength;
-                            }
-                            else {
-                                document.getElementById("p-limit-length").innerHTML = currentLength + " / " + maxlength;
-                            }
-                        }
-                    </script>
-                </div>
-                <div class="div-top-txt-0">
-                    <p>Contact information:</p>
-                </div>
-                <div class="div-top-input-0">
-                    <input id="input-0" type="text" class="form-control" placeholder="E-mail:xxx@xxx.com">
+                <div class="mb-3">
+                    <div class="div-top-txt-0">
+                        <label for="input-0">Contact information:</label>
+                    </div>
+                    <div class="div-top-input-0">
+                        <input id="input-0" type="email" class="form-control" placeholder="E-mail:xxx@xxx.com">
+                    </div>
                 </div>
                 <div class="div-top-btn-0">
                     <button id="btn-submit" type="button" class="btn btn-warning btn-lg btn-block">Submit</button>
